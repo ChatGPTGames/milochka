@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>милочка-ферма 💕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>милочка-ферма uwu 🌸</h1>
+  <p>печка уже дымится~ хлебушек ждёт своих хозяюшек~ 🍞</p>
+  <div class="season-display" id="seasonDisplay">сейчас весна 🌸</div>
+  <div class="field" id="field"></div>
+
+  <div id="market">
+    <p>урожай: <span id="harvest">0</span> 🥕</p>
+    <p>яйца: <span id="eggs">0</span> 🥚</p>
+    <p>хлебушек: <span id="bread">0</span> 🍞</p>
+    <p>мёд: <span id="honey">0</span> 🍯</p>
+    <button onclick="sellHarvest()">продать урожай 💸</button>
+    <button onclick="sellEggs()">продать яйца 💸</button>
+    <button onclick="sellBread()">продать хлеб 💸</button>
+    <button onclick="sellHoney()">продать мёд 💸</button>
+    <p>монетки: <span id="coins">0</span> 🪙</p>
+  </div>
+
+  <div id="shop">
+    <h3>магазинчик 💕</h3>
+    <button onclick="buyAnimal()">купить коровку 🐄 (50 монет)</button>
+    <button onclick="feedAnimals()">накормить коровок 🥕</button>
+    <p>животные: <span id="animals">0</span> 🐄</p>
+    <button onclick="buyChicken()">купить курочку 🐔 (30 монет)</button>
+    <button onclick="collectEggs()">собрать яички 🥚</button>
+    <p>курочки: <span id="chickens">0</span> 🐔</p>
+  </div>
+
+  <div id="bakery">
+    <h3>пекарня 🍞</h3>
+    <button onclick="bakeBread()">испечь хлеб (3 морковки → 1 хлеб) 🔥</button>
+  </div>
+
+  <div id="apiary">
+    <h3>пасека 🍯</h3>
+    <button onclick="buyHive()">поставить улей (40 монет)</button>
+    <button onclick="collectHoney()">собрать мёд 🐝</button>
+    <p>улеи: <span id="hives">0</span> 🐝</p>
+  </div>
+
+  <div id="expansion">
+    <h3>расширение фермы 📦</h3>
+    <button onclick="expandField()">расширить поле (100 монет)</button>
+  </div>
+
+<div id="questDisplay" style="position: fixed; bottom: 10px; left: 10px; background: #ffe4e1cc; padding: 10px; border-radius: 8px; font-size: 14px; max-width: 300px; box-shadow: 0 0 5px pink;">
+  квест: <span id="currentQuestText">загружаю...</span>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
