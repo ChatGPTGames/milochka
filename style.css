@@ -1,0 +1,89 @@
+body {
+  font-family: sans-serif;
+  background: #e0ffe0;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  color: #6b8e23;
+}
+.field {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.tile {
+  width: 80px;
+  height: 80px;
+  background: #a2d149;
+  border: 2px solid #556b2f;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.plant {
+  background: url('https://i.imgur.com/6NfmQ.png') center center no-repeat;
+  background-size: cover;
+}
+.harvested {
+  background: #ffe;
+}
+.animal {
+  background: url('https://i.imgur.com/ev2G3PF.png') center center no-repeat;
+  background-size: cover;
+}
+.fed-animal {
+  background: url('https://i.imgur.com/DLUeVnN.png') center center no-repeat;
+  background-size: cover;
+}
+.chicken {
+  background: url('https://i.imgur.com/S8y9hvp.png') center center no-repeat;
+  background-size: cover;
+}
+.egg {
+  background: #fff url('https://i.imgur.com/kQKzL1u.png') center center no-repeat;
+  background-size: contain;
+}
+.bread {
+  background: url('https://i.imgur.com/mu7N6mL.png') center center no-repeat;
+  background-size: contain;
+}
+.hive {
+  background: url('https://i.imgur.com/QiCqIXo.png') center center no-repeat;
+  background-size: cover;
+}
+.honey {
+  background: url('https://i.imgur.com/JCSnHTy.png') center center no-repeat;
+  background-size: contain;
+}
+.season-display {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #444;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffcc99;
+  cursor: pointer;
+}
+#market, #shop, #expansion, #bakery, #apiary {
+  margin-top: 20px;
+}
+#questArea {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f0fff0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #99cc99;
+}
+
